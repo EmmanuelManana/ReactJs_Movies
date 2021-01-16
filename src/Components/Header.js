@@ -12,7 +12,7 @@ const Header = () => {
             </div>
 
             {/* justify-content: space-around; */}
-              <ul  className="header__nav-links">
+              <ul  className="header__navLinks">
                 <li>
                   <a href="#">Home</a> 
                 </li>
@@ -23,6 +23,13 @@ const Header = () => {
                   <a href="#">About The <br/>Developer</a> 
                 </li>
               </ul>
+
+              <div className="Header__burger">
+                <div className="burger__line1"></div>
+                <div className="burger__line2"></div>
+                <div className="burger__line3"></div>
+              </div>
+
         </nav>
     </div>
   );
