@@ -1,6 +1,8 @@
 import Header from './Components/Header';
+import Home from './Components/Home';
+// import Row from './Components/Row';
 import './Styles/App.css';
-// import Header from './Components/Header'
+import './Styles/Row.css'
 
 function App() {
   return (
@@ -9,7 +11,8 @@ function App() {
      {/* Header */}
      <Header />
      {/* Home */}
-
+     <Home />
+     {/* <Row title="Top rated" fetchUrl={requests.fetchTopRated}/> */}
     </div>
   );
 }

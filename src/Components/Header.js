@@ -14,13 +14,13 @@ const Header = () => {
             {/* justify-content: space-around; */}
               <ul  className="header__navLinks">
                 <li>
-                  <a href="#">Home</a> 
+                  <a href="www.com">Home</a> 
                 </li>
                 <li>
-                  <a href="#">Popular <br/>Movies</a> 
+                  <a href="www.com">Popular <br/>Movies</a> 
                 </li>
                 <li>
-                  <a href="#">About The <br/>Developer</a> 
+                  <a href="www.com">About The <br/>Developer</a> 
                 </li>
               </ul>
 
