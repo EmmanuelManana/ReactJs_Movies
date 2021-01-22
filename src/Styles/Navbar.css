@@ -1,0 +1,39 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: goldenrod;
+  height: 9.9vh;
+  display: flex;
+  position: sticky;
+  
+}
+
+.navbar__logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 15px;
+  background-color: rgb(83, 83, 83);
+  padding: 2vh;
+  cursor: pointer;
+  width: 120px;
+  height: 9.9vh;
+  
+}
+
+h3{
+  text-decoration: none;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  justify-content: space-evenly;
+  margin-right: 500px;
+  text-decoration: none;
+}

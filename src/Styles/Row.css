@@ -4,6 +4,12 @@
   grid-gap: 20px;
 }
 
+@media screen and (max-width:1080px){
+    .rows{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 
 @media screen and (max-width:768px){
     .rows{

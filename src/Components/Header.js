@@ -1,11 +1,11 @@
 import React from "react";
 import "../Styles/Header.css";
-import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
     <div className="header">
-      
+      <Navbar />
     </div>
   );
 };
