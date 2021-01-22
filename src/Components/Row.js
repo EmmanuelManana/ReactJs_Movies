@@ -4,7 +4,7 @@ import "../Styles/Row.css";
 import MovieCard from "./MovieCard";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
-const Row = ({ title, fetchUrl }) => {
+const Row = ({ fetchUrl }) => {
   const [movies, setmovies] = useState([]);
 
   //pull the information right when row loads.
@@ -21,17 +21,17 @@ const Row = ({ title, fetchUrl }) => {
       // cleanup
     };
   }, [fetchUrl]); // [] = run once when the row loads. [x] = run when x changes
-
-  console.table(movies);
+  console.log("get movies for the id",movies)
   return (
     <div className="rows">
       {movies.map((movie) => (
         <MovieCard
+          key={movie.id}
+          id={movie.id}
+          rating={movie.vote_average*10}
           title={movie.original_title}
           image={`${base_url}${movie.poster_path}`}
-        >
-          {" "}
-        </MovieCard>
+        ></MovieCard>
       ))}
     </div>
   );
