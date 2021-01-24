@@ -1,5 +1,5 @@
 export const initialState = {
-    movieId: 0
+    stateMovies : []
 };
 
 
@@ -9,7 +9,7 @@ export const reducer = (state, action) => {
         case "FETCH_MOVIE_ID":
             return {
                 ...state, 
-                movieId: action.movieId
+                stateMovies:  [...state.stateMovies, action.stateMovies]
             }
         default:
             return state;

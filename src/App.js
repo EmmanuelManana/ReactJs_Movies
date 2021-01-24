@@ -3,30 +3,31 @@ import Movies from "./Components/Movies";
 import "./Styles/App.css";
 import "./Styles/Row.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import request from "./Request/request";
+import request from "./API/request";
 import AboutMovie from "./Components/AboutMovie";
+import AboutDev from "./Components/AboutDev";
+import LandingPage from "./Components/LandingPage";
 
 function App() {
+
   return (
     <Router>
-      {/* // Bem naming naming convention. */}
+
       <div className="app">
         <Header />
         <Switch>
           <Route path="/home">
-            {/* must rename hoem to genre or fetch movies*/}
             <Movies fetchUrl={request.fetchPlayingNow} />
           </Route>
 
           <Route path="/popular">
-            <Movies fetchUrl={request.fetchTrending} />
+            <Movies fetchUrl={request.fetchPopular} />
           </Route>
 
           <Route path="/aboutmovie/:id" component={AboutMovie}></Route>
+          <Route path="/aboutdev" component={AboutDev}></Route>
+          <Route path="/" component={LandingPage} />
 
-          <Route path="/">
-            <h1>This will be the landing page</h1>
-          </Route>
         </Switch>
       </div>
     </Router>

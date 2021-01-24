@@ -6,22 +6,24 @@ import { MenuItems } from "./MenuItems";
 const Ul = styled.ul`
   width: 50px;
   align-items: center;
-  margin-left: 500px;
+  margin-left: 600px;
   justify-content: space-evenly;
- 
+
   display: flex;
   flex-flow: row nowrap;
   li {
-    padding: 18px 10px;
+    padding: 10px 30px;
     list-style: none;
-   
   }
-  li a{
+  li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
     letter-spacing: 1px;
     color: rgb(88, 88, 88);
+  }
+  @media screen and (max-width: 1080px) {
+    margin-left: 300px;
   }
   @media screen and (max-width: 768px) {
     flex-flow: column nowrap;
@@ -33,7 +35,8 @@ const Ul = styled.ul`
     height: 60vh;
     width: 250px;
     padding-top: 4rem;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.2s ease-in;
+
     li {
       color: #fff;
       text-decoration: none;
@@ -46,9 +49,9 @@ const RightNav = ({ open }) => {
     <Ul open={open}>
       {MenuItems.map((item, i) => (
         <li key={i} className={item.className}>
-          <a>
-            <Link to={item.link}>{item.title}</Link>
-          </a>
+          <p>
+            <a href={item.link}> {item.title}</a>
+          </p>
         </li>
       ))}
     </Ul>

@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
 import Burger from "./Burger";
-import { MenuItems } from "./MenuItems";
 
 const Navbar = () => {
   return (

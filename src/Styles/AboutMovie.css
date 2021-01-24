@@ -22,16 +22,13 @@
   justify-content: space-between;
   margin-bottom: 20px;
   grid-template-columns: 0.4fr 1fr;
+  max-width: 1000px;
 }
 
 @media screen and (max-width:400px){
     .aboutMovie_container{
         grid-template-columns: 1fr;
     }
-}
-
-.aboutMovie {
-  max-width: 1000px;
 }
 
 .aboutMovie__left > img {
@@ -50,6 +47,7 @@
   max-width: 600px;
   display: block;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .aboutMovie__form {
@@ -84,3 +82,4 @@
 #rating {
   padding: 5px;
 }
+
