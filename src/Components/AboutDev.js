@@ -6,9 +6,8 @@ const AboutDev = () => {
         <div className="aboutDev">
             <img
                 className="aboutDev_image"
-                src="https://media-exp1.licdn.com/dms/image/C4D35AQEhdhhK4HUT7Q/profile-framedphoto-shrink_200_200/0/1609757945309?e=1611561600&v=beta&t=GZrgnM5toT1eGpk-Z8pB7mWNJjvTgYqxrX-FmKcTUzs" alt=""
+                src="https://media-exp1.licdn.com/dms/image/C4D35AQEhdhhK4HUT7Q/profile-framedphoto-shrink_200_200/0/1609757945309?e=1611669600&v=beta&t=tBq4bCzaRbslJZ0IimV71ELGEfxhTgI4aqskcnugrbY" alt=""
             />
-
             <div className="aboutDev__info">
                 <h1>Developer information</h1>
                 <h3>Name: Emmanuel</h3>

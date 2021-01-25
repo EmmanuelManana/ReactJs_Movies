@@ -89,7 +89,9 @@ const AboutMovie = (props) => {
   const submitTicket = async (event) => {
     event.preventDefault();
     const isValid = validateInput();
-    //create a trello board.then update it with info(custom fields)
+
+    if (isValid){
+       //create a trello board.then update it with info(custom fields)
     let result = fetch(
       `https://api.trello.com/1/cards?key=${Trello.key}&token=${Trello.token
       }&name=${name + ` ` + surname}&idList=${Trello.idList}&idBoard=${Trello.idBoard
@@ -143,6 +145,8 @@ const AboutMovie = (props) => {
     } catch (e) {
       console.error(e);
     }
+    }
+   
   };
 
   const year = movie.release_date;
@@ -167,7 +171,7 @@ const AboutMovie = (props) => {
           </div>
 
           <div className="aboutMovie__right">
-            <h1>
+            <h1 id="title">
               <u>{movie.original_title} </u>
               <p>
                 (<small>{yearArray[0]}</small>)

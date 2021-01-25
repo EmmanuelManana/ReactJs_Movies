@@ -5,8 +5,12 @@
   padding:10px;
 }
 
-.aboutMovie__right h1 {
+.aboutMovie__right h1{
   display: flex;
+}
+
+#title{
+  text-decoration: underline;
 }
 
 .aboutMovie__right {
