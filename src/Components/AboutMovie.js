@@ -139,7 +139,7 @@ const AboutMovie = (props) => {
               customFieldsId.Movie,
               movie.original_title
             );
-            alert("Your Request has been Made, you will hear from us soon")
+            alert("Your Request has been made, you will hear from us soon!!")
           }
         });
     } catch (e) {
