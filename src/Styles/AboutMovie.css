@@ -69,6 +69,8 @@
   outline: none;
 }
 
+
+
 .aboutMovie__form button {
   cursor: pointer;
   width: 85%;
@@ -83,3 +85,6 @@
   padding: 5px;
 }
 
+#errors{
+  color: red;
+}

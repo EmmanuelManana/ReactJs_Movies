@@ -3,7 +3,7 @@ import { getMovies } from "../API/request";
 import "../Styles/Row.css";
 import MovieCard from "./MovieCard";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { useStateValue } from "../State/StateProvider";
+// import { useStateValue } from "../State/StateProvider";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 const Row = ({ fetchUrl }) => {

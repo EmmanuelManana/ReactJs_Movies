@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { MenuItems } from "./MenuItems";
 
@@ -50,7 +49,7 @@ const RightNav = ({ open }) => {
       {MenuItems.map((item, i) => (
         <li key={i} className={item.className}>
           <p>
-            <a href={item.link}> {item.title}</a>
+            <a href={item.link}>{item.title}</a>
           </p>
         </li>
       ))}
